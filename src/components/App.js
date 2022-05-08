@@ -6,16 +6,14 @@ const App = () => {
   const increase = () => {
     setCount(count + 1);
   };
+  const setIncrement = () => {
+    alert("cant edit it");
+  };
 
   return (
     <>
       <div className="ball">
-        <h1
-          className="count"
-          ondoubleClick={() => {
-            alert("cant edit it");
-          }}
-        >
+        <h1 className="count" onDoubleClick={setIncrement}>
           {count}
         </h1>
         <button class="increment-button" onClick={increase}>
