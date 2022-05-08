@@ -12,7 +12,7 @@ const App = () => {
       <div className="ball">
         <h1
           className="count"
-          ondoubleclick={() => {
+          ondoubleClick={() => {
             alert("cant edit it");
           }}
         >
